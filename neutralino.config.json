@@ -1,0 +1,37 @@
+{
+  "applicationId": "neutralinojs.taotao7.react.ts.template",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "documentRoot": "/react-src/dist/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "tokenSecurity": "one-time",
+  "nativeAllowList": ["app.*", "filesystem.readDirectory", "os.*"],
+  "modes": {
+    "window": {
+      "title": "template",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 200,
+      "icon": "/icons/app.ico",
+      "enableInspector": true
+    }
+  },
+  "cli": {
+    "binaryName": "template",
+    "extensionsPath": "/extensions/",
+    "resourcesPath": "/react-src/dist/",
+    "frontendLibrary": {
+      "patchFile": "/react-src/index.html",
+      "devUrl": "http://localhost:5173",
+      "projectPath": "/react-src/",
+      "initCommand": "npm install",
+      "devCommand": "npm run dev",
+      "buildCommand": "npm run build",
+      "waitTimeout": 20000
+    },
+    "binaryVersion": "5.3.0"
+  }
+}
